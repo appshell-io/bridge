@@ -1,0 +1,2 @@
+include ':app', ':webview', ':common', ':react-native'
+rootProject.name='android'
