@@ -1,0 +1,23 @@
+{
+  "name": "appshell-bridge-common",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -p . -w",
+    "build": "tsc -p .",
+    "test": "jest --forceExit --coverage --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "@types/react-native": "^0.60.30",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "react-native": "^0.61.5"
+  }
+}

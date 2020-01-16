@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "lib": ["ES2015"],
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "jest"
+    ]
+  },
+  "files": [
+    "src/**/*.ts"
+  ]
+}

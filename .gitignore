@@ -1,0 +1,13 @@
+node_modules
+dist
+
+# idea
+.idea
+*.iml
+
+# coverage
+coverage
+
+# OS metadata
+.DS_Store
+Thumbs.db
