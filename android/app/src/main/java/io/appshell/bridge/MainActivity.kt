@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
             toActivity(WebViewActivity::class.java)
         }
         item_rn.setOnClickListener {
-
+            toActivity(ReactNativeActivity::class.java)
         }
     }
 
