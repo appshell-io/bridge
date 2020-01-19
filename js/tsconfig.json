@@ -17,6 +17,8 @@
     ]
   },
   "files": [
-    "src/**/*.ts"
+    "src/index.ts",
+    "src/react-native.ts",
+    "src/webview.ts"
   ]
 }

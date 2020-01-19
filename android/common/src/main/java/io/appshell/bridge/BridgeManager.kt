@@ -1,5 +1,9 @@
 package io.appshell.bridge
 
-object BridgeManager {
-    
+open class BridgeManager(val registry: BridgeRegistry) {
+
+    fun callNative(call: BridgeCall) {
+
+    }
+
 }

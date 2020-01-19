@@ -2,10 +2,19 @@ package io.appshell.bridge
 
 object BridgeRegistry {
 
-    fun addChannel(channel: BridgeChannel) {
+
+    /**
+     * Register a channel class
+     */
+    fun register(channelClass: Class<*>) {
 
     }
 
-    fun removeChannel(channel: BridgeChannel) {}
+    /**
+     * travel all channel classes
+     */
+    internal fun forEach(func: (channelClass: Class<*>) -> Unit) {
+
+    }
 
 }

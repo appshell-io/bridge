@@ -1,9 +1,3 @@
-type CallNativeParam = {
-  channel: string
-  method: string
-  args?: any
-}
-
 type CallNativeResult = {
   callId: string
   success: boolean
@@ -13,15 +7,14 @@ type CallNativeResult = {
 
 type NativeFunc = (msg: { 
   callId: string 
-  params: CallNativeParam
+  scheme: string
+  params: any
 }) => void
 
 
 let nativeApi: {
   nativeFunc: NativeFunc
 }
-
-const channels = {}
 
 // provide by platform
 export function setNativeFunc(nativeFunc: NativeFunc) {
@@ -37,22 +30,24 @@ const callIdGen = (() => {
 const callPromiseCahce: any = {}
 
 // call native async for result
-export function callNativeForResult<T>(params: CallNativeParam): Promise<T> {
+export function callNativeForResult<T>(scheme: string, params: any): Promise<T> {
   return new Promise((resolve, reject) => {
     let callId =  callIdGen()
     callPromiseCahce[callId] = { resolve, reject }
     nativeApi.nativeFunc({
       callId,
+      scheme,
       params
     })
   })
 }
 
 // call native
-export function callNative(params: CallNativeParam) {
+export function callNative(scheme: string, params: any) {
   let callId =  callIdGen()
   nativeApi.nativeFunc({
     callId,
+    scheme,
     params
   })
 }

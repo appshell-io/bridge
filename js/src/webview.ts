@@ -1,17 +1,17 @@
 import { setNativeFunc } from './index'
 
-const win = window as any
+declare var window: any
 
 setNativeFunc(msg => {
 
   // iOS WKWebView
-  if (win.webkit && win.webkit.messageHandlers) {
-    return win.webkit.messageHandlers.appShell.postMessage(msg)
+  if (window.webkit && window.webkit.messageHandlers) {
+    return window.webkit.messageHandlers.appShell.postMessage(msg)
   } 
 
   // android bridge
-  if (win.appShellBridge) {
-    return win.appShellBridge.callNative(JSON.stringify(msg))
+  if (window.appShellBridge) {
+    return window.appShellBridge.callNative(msg.callId, msg.scheme, JSON.stringify(msg.params))
   }
 
   // TODO we will support more webview later
