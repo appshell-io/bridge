@@ -95965,69 +95965,69 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
       barStyle: "dark-content",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 27
       }
     }), _react.default.createElement(_reactNative.SafeAreaView, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 28
       }
     }, _react.default.createElement(_reactNative.ScrollView, {
       contentInsetAdjustmentBehavior: "automatic",
       style: styles.scrollView,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 29
       }
     }, _react.default.createElement(Header, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 32
       }
     }), global.HermesInternal == null ? null : _react.default.createElement(_reactNative.View, {
       style: styles.engine,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 34
       }
     }, _react.default.createElement(_reactNative.Text, {
       style: styles.footer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 35
       }
     }, "Engine: Hermes")), _react.default.createElement(_reactNative.View, {
       style: styles.body,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37
+        lineNumber: 38
       }
     }, _react.default.createElement(_reactNative.View, {
       style: styles.sectionContainer,
       onMagicTap: onClickCallNative,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 39
       }
     }, _react.default.createElement(_reactNative.Text, {
       style: styles.sectionTitle,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 40
       }
     }, "CallNative"))))));
   };
 
   var styles = _reactNative.StyleSheet.create({
     scrollView: {
-      backgroundColor: Colors.lighter
+      backgroundColor: _reactNative.Colors.white
     },
     engine: {
       position: 'absolute',
       right: 0
     },
     body: {
-      backgroundColor: Colors.white
+      backgroundColor: _reactNative.Colors.white
     },
     sectionContainer: {
       marginTop: 32,
@@ -96036,19 +96036,19 @@ __d(function (global, _$$_REQUIRE, _$$_IMPORT_DEFAULT, _$$_IMPORT_ALL, module, e
     sectionTitle: {
       fontSize: 24,
       fontWeight: '600',
-      color: Colors.black
+      color: _reactNative.Colors.black
     },
     sectionDescription: {
       marginTop: 8,
       fontSize: 18,
       fontWeight: '400',
-      color: Colors.dark
+      color: _reactNative.Colors.dark
     },
     highlight: {
       fontWeight: '700'
     },
     footer: {
-      color: Colors.dark,
+      color: _reactNative.Colors.dark,
       fontSize: 12,
       fontWeight: '600',
       padding: 4,

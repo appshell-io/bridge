@@ -6,82 +6,44 @@
  * @flow
  */
 
-import React from 'react';
+import React from 'react'
 import {
   SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
   Text,
+  Button,
   StatusBar,
   NativeModules,
-} from 'react-native';
+} from 'react-native'
+import * as JSB from 'appshell-jsbridge/dist/react-native'
 
-const App: () => React$Node = () => {
+const App = () => {
   const onClickCallNative = () => {
-    NativeModules.AppShell.callNative('io.appshell.bridge.test/test', { key: 'value' })
+    console.log('yes call native')
+    JSB.callNative('io.appshell.bridge.test/test', { key: 'value' })
   }
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer} onMagicTap={onClickCallNative}>
-              <Text style={styles.sectionTitle}>CallNative</Text>
-            </View>
-          </View>
-        </ScrollView>
+      <SafeAreaView style={styles.container}>
+          <Button style={styles.button} title="Call Native" onPress={onClickCallNative}/>
       </SafeAreaView>
     </>
   );
 };
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
+  container: {
+    flex: 1,
+    backgroundColor: "#FFFFFF",
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
+  button: {
+    fontSize: 20
+  }
 });
 
 export default App;
