@@ -9,6 +9,6 @@ import Foundation
 
 class BridgeRegistry {
     
-    
+    public static let shared = BridgeRegistry()
     
 }

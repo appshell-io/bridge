@@ -14,6 +14,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		C14B5969CC5431253E3872D4 /* Pods_AppShellBridge_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859939BB1B37C0ED7A828E4A /* Pods_AppShellBridge_Tests.framework */; };
+		E92909DF23D580C800F32A56 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92909DE23D580C800F32A56 /* WebViewController.swift */; };
+		E92909EB23D589B200F32A56 /* ReactNativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92909EA23D589B200F32A56 /* ReactNativeController.swift */; };
 		ECD7D8A067040D75C9027F90 /* Pods_AppShellBridge_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488E88160FEF90449035411B /* Pods_AppShellBridge_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,11 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		42D47BB36DED3E6DCF70CED6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		42D47BB36DED3E6DCF70CED6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		488E88160FEF90449035411B /* Pods_AppShellBridge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppShellBridge_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BEBA2178B9736D876453DA /* Pods-AppShellBridge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppShellBridge_Example.debug.xcconfig"; path = "Target Support Files/Pods-AppShellBridge_Example/Pods-AppShellBridge_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		499EC4B6D9968DA96DCDCC52 /* AppShellBridge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AppShellBridge.podspec; path = ../AppShellBridge.podspec; sourceTree = "<group>"; };
-		603024E0B3BB5D09708ADD20 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		499EC4B6D9968DA96DCDCC52 /* AppShellBridge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AppShellBridge.podspec; path = ../AppShellBridge.podspec; sourceTree = "<group>"; };
+		603024E0B3BB5D09708ADD20 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AppShellBridge_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppShellBridge_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		859939BB1B37C0ED7A828E4A /* Pods_AppShellBridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppShellBridge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1EC219046443F96286507CF /* Pods-AppShellBridge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppShellBridge_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AppShellBridge_Tests/Pods-AppShellBridge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D7B2B865EAD00E096F19B852 /* Pods-AppShellBridge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppShellBridge_Example.release.xcconfig"; path = "Target Support Files/Pods-AppShellBridge_Example/Pods-AppShellBridge_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E92909DE23D580C800F32A56 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		E92909EA23D589B200F32A56 /* ReactNativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeController.swift; sourceTree = "<group>"; };
 		F95AB4148F26D22DEF94FF1F /* Pods-AppShellBridge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppShellBridge_Tests.release.xcconfig"; path = "Target Support Files/Pods-AppShellBridge_Tests/Pods-AppShellBridge_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +90,6 @@
 				B1EC219046443F96286507CF /* Pods-AppShellBridge_Tests.debug.xcconfig */,
 				F95AB4148F26D22DEF94FF1F /* Pods-AppShellBridge_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -116,6 +119,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				E92909DE23D580C800F32A56 /* WebViewController.swift */,
+				E92909EA23D589B200F32A56 /* ReactNativeController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -228,6 +233,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -352,7 +358,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92909EB23D589B200F32A56 /* ReactNativeController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				E92909DF23D580C800F32A56 /* WebViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
